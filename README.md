@@ -19,11 +19,14 @@ Reproducible R project for permanent plots analysis (Bosque Pehuén, FMA).
 Some packages (e.g., sf, terra, curl, xml2) need OS libraries. Use:
 
 # helper to list system reqs (install 'pak' if needed)
+```r
 install.packages("pak")
 pak::pkg_sysreqs(c("sf","terra","curl","xml2"))
+```
 
 # Then install via your package manager (e.g., Ubuntu/Debian):
-
+```r
 sudo apt-get update
 sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libssl-dev \
                         gdal-bin libgdal-dev libgeos-dev libproj-dev
+```
