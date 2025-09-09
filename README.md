@@ -13,7 +13,8 @@ Reproducible R project for permanent plots analysis (Bosque Pehuén, FMA).
    ```r
    install.packages("renv")
 
-🐧 Linux: system libraries (only if you see build errors)
+
+## 🐧 Linux: system libraries (only if you see build errors)
 
 Some packages (e.g., sf, terra, curl, xml2) need OS libraries. Use:
 
@@ -21,8 +22,7 @@ Some packages (e.g., sf, terra, curl, xml2) need OS libraries. Use:
 install.packages("pak")
 pak::pkg_sysreqs(c("sf","terra","curl","xml2"))
 
-
-Then install via your package manager (e.g., Ubuntu/Debian):
+# Then install via your package manager (e.g., Ubuntu/Debian):
 
 sudo apt-get update
 sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libssl-dev \
