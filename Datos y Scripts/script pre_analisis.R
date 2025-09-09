@@ -3,14 +3,14 @@ library(readxl)
 library(lme4)
 
 #Cargar datos
-treeStruc <- read_excel("treeStruc_2024.xlsx", sheet = "Sheet1")
+treeStruc <- read_excel("G:\\Shared drives\\FMA-G\\C-CONSERVACIÓN\\C1-BOSQUE PEHUEN\\C1.6_ESTUDIOS BP\\UACH 2023-2024 (RIcardo Moreno)\\Monitoreo parcelas permanentes\\Entrega Ricardo 02 Sept 2025\\Datos y Scripts\\treeStruc_2024-4.xlsx", sheet = "Sheet1")
 
 
 ####data fixing
-treeStruc$DAP = as.numeric(treeStruc$DAP)
-treeStruc$dap1 = as.numeric(treeStruc$dap1)
-treeStruc$parc_elev = as.numeric(treeStruc$parc_elev)
-treeStruc$agno = as.integer(treeStruc$agno)
+treeStruc$DAP <- as.numeric(treeStruc$DAP)
+treeStruc$dap1 <- as.numeric(treeStruc$dap1)
+treeStruc$parc_elev <- as.numeric(treeStruc$parc_elev)
+treeStruc$agno <- as.integer(treeStruc$agno)
 
 
 ############  ############  ############  ############
@@ -251,7 +251,3 @@ ggplot( aes(x = as.factor(Parcela), y = mean_plnt)) +
          x = "Plot elavation (masl)",
          y = "seedling amount (mean + sd)")+
     theme_bw()
-
-
-  
- 
